@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>716</width>
+    <height>470</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Toplu Mail Gonderici</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_8">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout_7">
+      <item row="0" column="0">
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="6">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>Sifre</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Server</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="5">
+         <widget class="QLineEdit" name="lineEdit_4"/>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Port</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="4">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Mail</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="7">
+         <widget class="QLineEdit" name="lineEdit"/>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="lineEdit_2"/>
+        </item>
+        <item row="0" column="3">
+         <widget class="QLineEdit" name="lineEdit_3"/>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0">
+       <layout class="QGridLayout" name="gridLayout_6">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>Mail Adresleri</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <layout class="QGridLayout" name="gridLayout_5">
+          <item row="0" column="0" rowspan="3">
+           <layout class="QGridLayout" name="gridLayout_4">
+            <item row="0" column="0">
+             <widget class="QListWidget" name="listWidget"/>
+            </item>
+            <item row="1" column="0">
+             <layout class="QGridLayout" name="gridLayout_3">
+              <item row="0" column="0">
+               <widget class="QLineEdit" name="lineEdit_7"/>
+              </item>
+              <item row="1" column="0">
+               <widget class="QPushButton" name="pushButton_2">
+                <property name="text">
+                 <string>Ekle</string>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>../../usr/share/icons/Humanity/actions/64/document-new.svg</normaloff>../../usr/share/icons/Humanity/actions/64/document-new.svg</iconset>
+                </property>
+                <property name="shortcut">
+                 <string>Return</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QPushButton" name="pushButton_3">
+                <property name="text">
+                 <string>Dosyadan</string>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>../../usr/share/icons/Humanity/actions/64/stock_add-bookmark.svg</normaloff>../../usr/share/icons/Humanity/actions/64/stock_add-bookmark.svg</iconset>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="1">
+           <layout class="QGridLayout" name="gridLayout_2">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_6">
+              <property name="text">
+               <string>Gonderen</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLineEdit" name="lineEdit_6"/>
+            </item>
+            <item row="0" column="2">
+             <widget class="QLabel" name="label_8">
+              <property name="text">
+               <string>Konu</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="3">
+             <widget class="QLineEdit" name="lineEdit_5"/>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="1">
+           <widget class="QTextEdit" name="textEdit"/>
+          </item>
+          <item row="2" column="1">
+           <widget class="QPushButton" name="pushButton">
+            <property name="text">
+             <string>Gonder</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../usr/share/icons/Humanity/actions/64/address-book-new.svg</normaloff>../../usr/share/icons/Humanity/actions/64/address-book-new.svg</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <widget class="QProgressBar" name="progressBar">
+      <property name="value">
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>716</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuProgram">
+    <property name="title">
+     <string>Program</string>
+    </property>
+    <addaction name="actionAyarlar"/>
+    <addaction name="actionHakkinda"/>
+    <addaction name="actionYukseltme"/>
+   </widget>
+   <addaction name="menuProgram"/>
+  </widget>
+  <action name="actionAyarlar">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Ayarlar</string>
+   </property>
+  </action>
+  <action name="actionHakkinda">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Hakkinda</string>
+   </property>
+  </action>
+  <action name="actionYukseltme">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Yukseltme</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="kaynaklar.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>263</x>
+     <y>389</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>4</x>
+     <y>392</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
